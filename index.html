@@ -234,11 +234,11 @@ BioCoder is a challenging bioinformatics code generation benchmark for state-of-
             </div>
             <div class="tabs is-centered code_expl_lst" id="biocoder-prompt-type-selector" style="display: block;">
               <ul>
-                <li title="Summary at Top" class="is-active" data="summarytop"><a>Summary at Top</a></li>
+                <li title="Necessary Only" class="is-active" data="necessary"><a>Necessary Only</a></li>
+                <li title="Summary at Top" data="summarytop"><a>Summary at Top</a></li>
                 <li title="Uncommented" data="uncommented"><a>Uncommented</a></li>
                 <li title="Summary Only" data="summaryonly"><a>Summary Only</a></li>
                 <li title="Summary at Bottom" data="summarybottom"><a>Summary at Bottom</a></li>
-                <li title="Necessary Only" data="necessary"><a>Necessary Only</a></li>
               </ul>
             </div>
 
@@ -295,7 +295,7 @@ BioCoder is a challenging bioinformatics code generation benchmark for state-of-
                   .then(response => response.text())
                   .then(text => {
                     cache[data] = text;
-                    document.querySelector('#biocoder-example-txt').innerHTML = "\n" + text;
+                    document.querySelector('#biocoder-example-txt').innerHTML = text;
                   });
               }
 
