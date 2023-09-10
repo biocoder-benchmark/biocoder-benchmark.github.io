@@ -140,7 +140,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/"
+                  <a href="https://arxiv.org/abs/2308.16458"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -214,7 +214,7 @@ In addition to the dataset, BioCoder also features:
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-Pre-trained language models have significantly advanced code generation, paving the way for innovative programs. As these models scale up, there’s an escalating need for more intricate tasks. Particularly in bioinformatics, generating functional programs poses notable challenges due to the specific domain knowledge, complicated data operations, and intricate functional dependencies required. In this research, we present BioCoder, a benchmark developed to evaluate pre-training models like InCoder, CodeGen, CodeGen2, SantaCoder, StarCoder, and ChatGPT in generating bioinformatics code. BioCoder covers potential package dependencies, class declarations, and global variables related to functions, as well as function specifications, explanations, and usage guidance for libraries and packages. We’ve also taken small modifications to stop models from simply memorizing the solutions and included Python, Java, and a dataset from the Rosalind Project. BioCoder-Py and BioCoder-Java feature 889 functions and 1243 methods separately with fuzzing testing framework publicly available, alongside 253 Rosalind functions. Our detailed analysis of these models emphasizes the importance of domain knowledge, pragmatic code generation, and contextual understanding.            </p>
+              Pre-trained language models like ChatGPT have significantly improved code generation. As these models scale up, there is an increasing need for the output to handle more intricate tasks. Moreover, in bioinformatics, generating functional programs poses additional notable challenges due to the amount of domain knowledge, the need for complicated data operations, and intricate functional dependencies between the operations. Here, we present BioCoder, a benchmark developed to evaluate existing pre-trained models in generating bioinformatics code. In relation to function-code generation, BioCoder covers potential package dependencies, class declarations, and global variables. It incorporates 1026 functions and 1243 methods in Python and Java from GitHub and 253 examples from the Rosalind Project. BioCoder incorporates a fuzz-testing framework for evaluation, and we have applied it to evaluate many models including InCoder, CodeGen, CodeGen2, SantaCoder, StarCoder, StarCoder+, InstructCodeT5+, and ChatGPT. Our detailed analysis of these models emphasizes the importance of domain knowledge, pragmatic code generation, and contextual understanding. Our dataset, benchmark, Docker images, and scripts required for testing are all available at <a href="https://github.com/gersteinlab/biocoder">this https URL</a>.            </p>
 <br>
                     <img src="static/images/benchmark.jpg">
 
@@ -1015,10 +1015,10 @@ Pre-trained language models have significantly advanced code generation, paving 
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-        <a class="icon-link" href="">
+        <a class="icon-link" href="https://arxiv.org/abs/2308.16458">
           <i class="fas fa-file-pdf" style="color:white"></i>
         </a>
-        <a class="icon-link" href="" class="external-link" disabled>
+        <a class="icon-link" href="https://github.com/biocoder-benchmark/biocoder-benchmark.github.io" class="external-link" disabled>
           <i class="fab fa-github" style="color:white"></i>
         </a>
       </div>
